@@ -12,7 +12,9 @@ Search by:
 4 - Skill
 
 Search term:
+
 No Results
+
 View jobs by (type 'x' to quit):
 0 - Search
 1 - List
