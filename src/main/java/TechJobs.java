@@ -123,7 +123,18 @@ public class TechJobs {
         if (someJobs.isEmpty()) {
             System.out.println("No Results");
         } else {
-            for (HashMap<String, String> job : someJobs) {
+            System.out.println("View jobs by (type 'x' to quit):");
+            System.out.println("0 - Search");
+            System.out.println("1 - List\n");
+
+            System.out.println("Search by:");
+            System.out.println("0 - All");
+            System.out.println("1 - Position Type");
+            System.out.println("2 - Employer");
+            System.out.println("3 - Location");
+            System.out.println("4 - Skill\n");
+
+              for (HashMap<String, String> job : someJobs) {
                 System.out.println("*****");
                 for (Map.Entry<String, String> entry : job.entrySet()) {
                     String column = entry.getKey();
