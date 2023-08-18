@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class TechJobs {
 
-    static Scanner in = new Scanner (System.in);
+    static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -120,14 +120,18 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        for (HashMap<String, String> job : someJobs) {
-            System.out.println("*****");
-            for (Map.Entry<String, String> entry : job.entrySet()) {
-                String column = entry.getKey();
-                String value = entry.getValue();
-                System.out.println(column + ": " + value);
+        if (someJobs.isEmpty()) {
+            System.out.println("*****\n[No Results]\n*****\n");
+        } else {
+            for (HashMap<String, String> job : someJobs) {
+                System.out.println("*****");
+                for (Map.Entry<String, String> entry : job.entrySet()) {
+                    String column = entry.getKey();
+                    String value = entry.getValue();
+                    System.out.println(column + ": " + value);
+                }
+                System.out.println("*****");
             }
-            System.out.println("*****");
         }
     }
 }
