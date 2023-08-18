@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class TechJobs {
 
-    static Scanner in = new Scanner(System.in);
+    static Scanner in = new Scanner (System.in);
 
     public static void main(String[] args) {
 
@@ -58,7 +58,7 @@ public class TechJobs {
                 String searchField = getUserSelection("Search by:", columnChoices);
 
                 // What is their search term?
-                System.out.println("\nSearch term:");
+                System.out.println("\nSearch term:\n");
                 String searchTerm = in.nextLine();
 
                 assert searchField != null;
@@ -127,7 +127,7 @@ public class TechJobs {
                 String value = entry.getValue();
                 System.out.println(column + ": " + value);
             }
-            System.out.println("*****\n");
+            System.out.println("*****");
         }
     }
 }
