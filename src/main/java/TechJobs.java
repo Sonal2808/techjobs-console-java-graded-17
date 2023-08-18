@@ -130,7 +130,7 @@ public class TechJobs {
                     String value = entry.getValue();
                     System.out.println(column + ": " + value);
                 }
-                System.out.println("*****");
+                System.out.println("*****"+"\n");
             }
         }
     }
