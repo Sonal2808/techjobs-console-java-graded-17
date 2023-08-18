@@ -123,14 +123,20 @@ public class TechJobs {
         if (someJobs.isEmpty()) {
             System.out.println("No Results");
         } else {
+            boolean firstJob = true;
             for (HashMap<String, String> job : someJobs) {
+                if (!firstJob) {
+                    System.out.println(); // Enter a newline between job entries
+                }
                 System.out.println("*****");
                 for (Map.Entry<String, String> entry : job.entrySet()) {
                     String column = entry.getKey();
                     String value = entry.getValue();
                     System.out.println(column + ": " + value);
                 }
-                System.out.println("*****"+"\n");
+                System.out.println("*****");
+                firstJob = false;
+
             }
         }
     }
